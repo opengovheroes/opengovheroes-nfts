@@ -1,0 +1,36 @@
+{
+  "name": "opengovheroes",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "cross-env envfile=westend.env ts-node ./src/server.ts",
+    "serve-kusama": "cross-env envfile=kusama.env ts-node ./src/server.ts",
+    "serve-polkadot": "cross-env envfile=polkadot.env ts-node ./src/server.ts",
+    "test": "ts-node ./src/badges.test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@polkadot/api": "^12.4.1",
+    "@polkadot/typegen": "^12.4.1",
+    "@polkadot/util-crypto": "^13.0.2",
+    "bignumber.js": "^9.1.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.6.12",
+    "pino": "^9.3.2",
+    "pino-pretty": "^10.2.0",
+    "thirdweb": "^5.53.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.6.2",
+    "@types/bignumber.js": "^5.0.0",
+    "@types/node": "^20.1.5",
+    "@types/node-fetch": "^2.6.4",
+    "jest": "^29.6.2",
+    "ts-jest": "^29.1.1"
+  }
+}

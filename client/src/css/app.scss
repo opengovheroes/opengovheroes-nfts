@@ -1,0 +1,41 @@
+// app global css in SCSS form
+.content {
+  max-width: 1600px;
+  min-height: 0 !important;
+}
+
+.desktop-only {
+  display: block;
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+  gap: 16px; 
+}
+
+.responsive-modal {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .responsive-modal {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .responsive-modal {
+    width: 35%;
+  }
+}
+
+.mobile-only2 {
+  display: none;
+  @media (max-width: 1439px) {
+    display: block;
+  }
+}
